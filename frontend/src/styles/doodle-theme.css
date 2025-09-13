@@ -1,0 +1,94 @@
+/* Doodle Theme CSS */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kalam', cursive;
+  background: repeating-linear-gradient(135deg, #fff, #fff 40px, #f7f7f7 41px, #f7f7f7 80px);
+  color: #222;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.doodle-box {
+  border: 3px solid #222;
+  border-radius: 24px 18px 30px 16px;
+  box-shadow: 4px 6px 0 #222, 0 0 0 2px #fff inset;
+  background: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  position: relative;
+  transform: rotate(-2deg);
+  transition: box-shadow 0.2s;
+}
+
+.doodle-box:hover {
+  box-shadow: 8px 12px 0 #222, 0 0 0 2px #fff inset;
+  transform: rotate(2deg);
+}
+
+.doodle-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0 #fff, 2px 2px 0 #222;
+}
+
+.doodle-btn {
+  font-family: 'Kalam', cursive;
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 12px 8px 16px 10px;
+  box-shadow: 2px 3px 0 #222;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.doodle-btn:active {
+  box-shadow: 1px 1px 0 #222;
+  transform: scale(0.98) rotate(-2deg);
+}
+
+.doodle-input {
+  font-family: 'Kalam', cursive;
+  border: 2px solid #222;
+  border-radius: 10px 8px 12px 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.doodle-stars {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.doodle-star {
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.doodle-star.selected {
+  color: #ffb400;
+  transform: scale(1.2) rotate(-8deg);
+}
+
+@media (max-width: 600px) {
+  .doodle-box {
+    padding: 1rem;
+    max-width: 95vw;
+  }
+  .doodle-title {
+    font-size: 1.5rem;
+  }
+}
