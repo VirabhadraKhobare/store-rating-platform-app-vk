@@ -93,8 +93,25 @@ store-rating-app/
 └── README.md
 ```
 
-## 🚀 Installation & Setup
+## 🖼️ Project Screenshots
 
+### 🔐 Login Page
+![Login Page](images/LoginPage.png)
+
+### 🔐 Register Page
+![Login Page](images/RegisterPage.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](images/AdminDashboard.png)
+
+### 🏪 Store List
+![Store List](images/StoreList.png)
+
+### 🏪 Store Rating
+![Store List](images/StoreRating.png)
+
+
+## 🚀 Installation & Setup
 
 ### Prerequisites
 - Node.js v22.14.0 or higher
